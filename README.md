@@ -3,7 +3,7 @@ Aplicação desenvolvida durante processo seletivo para vaga de desenvolvedor fr
 
 
 # Execução
-npm i \n
+npm i <br/>
 node index.js
 
 A aplicação é executada em localhost:8080
