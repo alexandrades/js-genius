@@ -1,0 +1,31 @@
+
+
+<form action="/" method="GET">
+    <div class="close-button">
+        <button type="submit" formmethod="GET" formaction="/">
+            <img src="images/fechar.png" alt="Ranking">
+        </button>
+    </div>
+</form>
+
+<h1 class="game-over-title">Fim de Jogo</h1>
+
+<div class="score">
+    <p>Score</p>
+    <p id="score-value" >{{score}}</p>
+</div>
+<form action="/save-ranking" method="POST" id="ranking-form">
+    <div id="name-input">
+        <input id="player-name" type="text" name="name" placeholder="Digite seu nome" >
+        <input id="player-score" type="hidden" name="score" placeholder="Digite seu nome">
+    </div>
+    <div class="start-game-button save-ranking-button">
+        <button id="save-ranking" type="submit">Salvar Ranking</button>
+    </div>
+</form>
+
+<script type="text/javascript">
+    // Adiciona o score do jogador como valor do elemento input para possibilitar o envio do mesmo atraves do formulário
+    const score = document.getElementById('player-score')
+    score.value = {{score}}
+</script>

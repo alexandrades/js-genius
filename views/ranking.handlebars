@@ -1,0 +1,30 @@
+<form action="/" method="GET">
+    <div class="top-bar">
+        <button class="back-button" type="submit">
+            <img src="images/voltar.png" alt="Voltar">
+        </button>
+        <p class="ranking-title">Ranking</p>
+    </div>
+</form>
+
+<div class="ranking-list">
+    {{#each players}}
+        <div class="ranking-item">
+        <p class="player-position">1</p>
+        <p class="player-name">{{name}}
+        </p>
+        <p class="player-score">{{score}}</p>
+    </div>
+    {{/each}}
+    
+</div>
+
+<script type="text/javascript">
+
+    // Percorre cada div das posições do ranking e adicionando sua respectiva posição
+    const positions = document.getElementsByClassName('player-position')
+
+    for(let label in positions){
+        positions[label].innerHTML = parseInt(label)+1
+    }
+</script>

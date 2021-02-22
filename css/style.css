@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    background-color: #1C2B2D;
+    color: #ffffff;
+    position: relative;
+}
+
+
+    .ranking-button button{
+        display: block;
+        margin-left: auto;
+        padding: 20px 20px 0px 0px;
+        background-color: transparent;
+        border: none;
+    }
+
+    .game-logo img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .game-logo {
+        margin-top: 33.89vh;
+    }
+
+    .start-game-button button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 320px;
+        height: 80px;
+        border: 3px solid #99A8B2;
+        border-radius: 10px;
+        background-color: #1F6F8B;
+        color: #E6D5B8;
+        font-size: 24px;
+        font-family: 'Roboto', sans-serif;
+        
+    }
+
+    .start-game-button {
+        margin-top: 55px;
+    }
+
+    #current-number p {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 150px;
+        text-align: center;
+        width: 150px;
+        height: 150px;
+        color: #E6D5B8;
+        border: 3px #E6D5B8 solid;
+        border-radius: 5px;
+        font-size: 96px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #current-number {
+        margin-top: 9vh;
+    }
+
+    #keyboard-interface {
+        display: block;
+        text-align: center;
+        margin-top: 55px;
+        font-size: 0px;
+    }
+
+    .button-item{
+        width: 100px;
+        height: 100px;
+        line-height: 105px;
+        text-align: center;
+        color: #E6D5B8;
+        background-color: transparent;
+        border: 3px #1F6F8B solid;
+        font-size: 64px;
+        font-family: 'Roboto', sans-serif;
+        padding: 0px;
+        display: inline-block;
+    }
+
+    .item-4, .item-7 {
+        clear: left;
+    }
+
+    .item-4, .item-5, .item-6 {
+        border-top: none !important;
+        border-bottom: none !important;
+    }
+
+    .item-2, .item-5, .item-8 {
+        border-left: none !important;
+        border-right: none !important;
+    }
+
+    .button-item:active{
+        background-color: #1F6F8B;
+        text-decoration: none;
+    }
+
+    .button-item::after{
+        text-decoration: none;
+    }
+
+    .close-button button{
+        display: block;
+        margin-left: auto;
+        padding: 20px 20px 0px 0px;
+        background-color: transparent;
+        border: none;
+    }
+
+    .game-over-title {
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        font-size: 48px;
+        color: #E6D5B8;
+        margin-top: 40px;
+    }
+
+    .score {
+        font-family: 'Roboto', sans-serif;
+        color: #E6D5B8;
+        width: 100%;
+        margin-top: 106px;
+    }
+    .score{
+        text-align: center;
+        font-size: 18px;
+    }
+
+    #score-value {
+        font-size: 96px;
+    }
+
+    #name-input input {
+        display: block;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 310px;
+        height: 80px;
+        border: 3px solid #1F6F8B;
+        border-radius: 10px;
+        background-color: transparent;
+        color: #E6D5B8;
+        font-size: 24px;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #name-input input::placeholder {
+        padding-left: 20px;
+    }
+
+    .save-ranking-button {
+        margin-top: 20px;
+    }
+
+    .top-bar {
+        position: relative;
+        top: 0px;
+        padding-top: 20px;
+        margin-left: 20px;
+    }
+
+    .back-button {
+        position: absolute;
+        border: none;
+        background-color: transparent;
+    }
+    
+    .ranking-title {
+        text-align: center;
+        font-size: 24px;
+        font-family: 'Roboto', sans-serif;
+        color: #E6D5B8;
+        line-height: 32px;
+    }
+
+    .ranking-list {
+        margin: 40px 20px 0px 20px;
+    }
+
+    .ranking-item {
+        display: flex;
+        margin-top: 10px;
+        font-size: 24px;
+        font-family: 'Roboto', sans-serif;
+        line-height: 45px;
+    }
+
+    .ranking-item:nth-child(-n+3) {
+        color: #99A8B2;
+    }
+    .ranking-item:nth-child(n+4) {
+        color: #1F6F8B;
+    }
+
+    .player-position {
+        width: 50px;
+    }
+
+    .player-name {
+        flex-grow: 1;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .player-score {
+        width: 50px;
+        margin-left: 15px;
+    }
